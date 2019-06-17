@@ -20,8 +20,8 @@
 # definition file).
 #
 
-# inherit from zero-common
-include device/samsung/zero-common/BoardConfigCommon.mk
+# inherit from noblelte-common
+include device/samsung/noblelte-common/BoardConfigCommon.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE :=nobleltetmo
