@@ -22,8 +22,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/nobleltetmo/nobleltetmo-vendor.mk)
 
-# Inherit from zero-common
-$(call inherit-product, device/samsung/noblelte-common/nobleltetmo-common.mk)
+# Inherit from noblelte-common
+$(call inherit-product, device/samsung/noblelte-common/noblelte-common.mk)
 
 # Include the pre-built kernel
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/zImage
