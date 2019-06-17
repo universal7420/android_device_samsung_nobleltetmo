@@ -24,13 +24,13 @@
 include device/samsung/zero-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE :=zerofltexx,zeroflte,zeroflteskt,zeroltexx,zerolte,zerolteskt,zerofltecan,zerofltetmo,zeroltecan,zeroltetmo
+TARGET_OTA_ASSERT_DEVICE :=nobleltetmo
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/zerofltexx/include
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/nobleltetmo/include
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_zerofltexx_defconfig
+TARGET_KERNEL_CONFIG := lineageos_nobleltetmo_defconfig
 
 # Radio
 BOARD_MODEM_TYPE := ss333

@@ -14,13 +14,16 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/zerofltexx
+LOCAL_PATH := device/samsung/nobleltetmo
 
 ## device overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-    
+
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/zerofltexx/zerofltexx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/nobleltetmo/nobleltetmo-vendor.mk)
 
 # Inherit from zero-common
-$(call inherit-product, device/samsung/zero-common/zero-common.mk)
+$(call inherit-product, device/samsung/noblelte-common/nobleltetmo-common.mk)
+
+# Include the pre-built kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/zImage
