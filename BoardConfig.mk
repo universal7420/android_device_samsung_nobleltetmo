@@ -30,12 +30,8 @@ TARGET_OTA_ASSERT_DEVICE :=nobleltetmo
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/nobleltetmo/include
 
 # Kernel
-#TARGET_KERNEL_CONFIG := renouveau_nobleltetmo_defconfig
-TARGET_KERNEL_CONFIG := lineageos_zerofltexx_defconfig #Use for now until a proper source kernel exists
-#TARGET_KERNEL_CONFIG := noblelte_US_defconfig #Only use with Helios kernel
+#TARGET_KERNEL_CONFIG := lineageos_nobleltetmo_defconfig
+TARGET_KERNEL_CONFIG := lineageos_zerofltexx_defconfig #Use for now until further notice
 
 # Radio
 BOARD_MODEM_TYPE := ss333
-
-# Recovery
-TARGET_NO_RECOVERY := true
