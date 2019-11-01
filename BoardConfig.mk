@@ -24,7 +24,7 @@
 include device/samsung/noblelte-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := nobleltetmo
+TARGET_OTA_ASSERT_DEVICE := nobleltecan,nobleltetmo
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/nobleltetmo/include
