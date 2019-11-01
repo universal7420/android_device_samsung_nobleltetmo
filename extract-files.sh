@@ -17,8 +17,8 @@
 
 set -e
 
-export DEVICE=zerofltexx
-export DEVICE_COMMON=zero-common
+export DEVICE=nobleltetmo
+export DEVICE_COMMON=noblelte-common
 export VENDOR=samsung
 
 ./../$DEVICE_COMMON/extract-files.sh $@
