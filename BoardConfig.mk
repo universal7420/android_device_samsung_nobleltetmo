@@ -21,7 +21,10 @@
 #
 
 # inherit from noblelte-common
-include device/samsung/noblelte-common/BoardConfigCommon.mk
+-include device/samsung/noblelte-common/BoardConfigCommon.mk
+
+# Inherit from proprietary vendor
+-include vendor/samsung/nobleltetmo/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := nobleltecan,nobleltespr,nobleltetmo,noblelteusc

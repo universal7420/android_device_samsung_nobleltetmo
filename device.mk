@@ -19,9 +19,21 @@ LOCAL_PATH := device/samsung/nobleltetmo
 ## device overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio_policy.conf:system/vendor/etc/audio_policy.conf \
+    $(LOCAL_PATH)/configs/mixer_gains.xml:system/etc/mixer_gains.xml \
+    $(LOCAL_PATH)/configs/mixer_gains.xml:system/vendor/etc/mixer_gains.xml \
+    $(LOCAL_PATH)/configs/mixer_paths-audience.xml:system/etc/mixer_paths-audience.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_0-audience.xml:system/etc/mixer_paths_0-audience.xml \
+    $(LOCAL_PATH)/configs/mixer_paths_0-audience.xml:system/vendor/etc/mixer_paths_0-audience.xml
+
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2018-08-01
 
 # Inherit from noblelte-common
 $(call inherit-product, device/samsung/noblelte-common/noblelte-common.mk)
+
+# Also get non-open-source specific aspects if available
+$(call inherit-product-if-exists, vendor/samsung/nobleltetmo/nobleltetmo-vendor.mk)
