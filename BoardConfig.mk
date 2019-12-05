@@ -27,7 +27,7 @@
 -include vendor/samsung/nobleltetmo/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := nobleltecan,nobleltespr,nobleltetmo,noblelteusc
+TARGET_OTA_ASSERT_DEVICE := nobleltecan,nobleltetmo
 
 # Bluetooth
 BOARD_BLUETOOTH_OID_BUILDCFG_INCLUDE_DIR := device/samsung/nobleltetmo/bluetooth
