@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nobleltetmo.mk
+    $(LOCAL_DIR)/havoc_nobleltetmo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nobleltetmo-user \
-    lineage_nobleltetmo-userdebug \
-    lineage_nobleltetmo-eng
+    havoc_nobleltetmo-user \
+    havoc_nobleltetmo-userdebug \
+    havoc_nobleltetmo-eng
